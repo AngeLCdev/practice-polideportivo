@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "wcss": "postcss src/styles/pcss/index.css -o src/styles/css/index.css -w"
+    "wcss": "postcss src/styles/pcss/index.pcss -o src/styles/css/index.css -w"
   },
   "eslintConfig": {
     "extends": [
