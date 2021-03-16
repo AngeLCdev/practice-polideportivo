@@ -284,13 +284,95 @@ template {
 }
 /* Elemets */
 body{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: "left";
-    justify-content: space-between;
+    background-color: rgb(11, 22, 34);
+    color: rgb(159, 173, 189);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875;
+    line-height: 1.8;
+    height: 100%;
 }
+html{
+    height: 100%;
+}
+img{
+    max-width: 100%
+}
+a {
+  color: #3db4f2;
+  text-decoration: underline;
+}
+a:hover,
+  a:focus {
+    color: #3db4f2;
+  }
 /* Objects */
+.o-ui-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+.o-ui-list--horizontal {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
 /* Atoms */
 /* Molecules */
 /* Organisms */
+.g-header {
+  background-color: #152232;
+  color: #a0b1c5;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.g-header__brand {
+    display: block;
+  }
+.g-header__brand img {
+      max-height: 5rem;
+    }
+.g-header__nav {
+    
+  }
+.g-header__login {
+    
+
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    text-decoration: none;
+  }
+.g-header__login:hover {
+      color: inherit;
+      text-decoration: underline;
+    }
+.g-footer {
+  background-color: #11161d;
+  color: #a0b1c5;
+  display: flex;
+  justify-content: center;
+  aling-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: center;
+}
+.g-footer__nav {
+      margin: 1rem;
+  }
+.g-footer__nav ul {
+      align-content: center;
+      justify-content: center;
+    }
+.g-main{
+    min-height: 100vh;
+}
 /* Utilities */

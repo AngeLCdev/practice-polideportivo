@@ -1,21 +1,18 @@
 const valores = {
-    $_eucalyptus: "#289f5f",
-    $_green_pea: "#19623b",
-    $_baltic_sea: "#282729",
-    $_cod_gray: "#181818",
-    $_dove_gray: "#666",
-    $_boulder: "#777",
-    $_white: "#fff",
-    $_alabaster: "#fafafa",
-    $_gallery: "#ececec",
-}
+  _bg_dark: "rgb(11, 22, 34)",
+  _color_dark: "rgb(159, 173, 189)",
+  _color_dark_100: "#a0b1c5",
+  _bg_dark_100: "#152232",
+  _bg_dark_200: "#11161d",
+  _azul: "#3db4f2",
+};
 
-const colores = {
-
-}
 module.exports = {
-    colores
-}
-
-
-
+  _bg_body: valores._bg_dark,
+  _color_body: valores._color_dark,
+  _bg_header: valores._bg_dark_100,
+  _color_header: valores._color_dark_100,
+  _bg_footer: valores._bg_dark_200,
+  _color_footer: valores._color_dark_100,
+  _color_link: valores._azul
+};

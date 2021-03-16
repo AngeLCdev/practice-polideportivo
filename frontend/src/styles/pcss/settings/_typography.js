@@ -1,24 +1,23 @@
+const fsBase = 16;
 
-$font-family: "Open Sans", sans-serif;
+const valores = {
+  "_fs-base": 16,
+  "_fs-9": 9 / fsBase,
+  "_fs-12": 12 / fsBase,
+  "_fs-14": 14 / fsBase,
+  "_fs-19": 19 / fsBase,
+  "_fs-25": 25 / fsBase,
+  "_fs-33": 33 / fsBase,
+  "_fs-44": 44 / fsBase,
+};
 
-// Typography scale
-$fs-base: 16;
-
-$_fs-9: 9 / $fs-base + rem;
-$_fs-12: 12 / $fs-base + rem;
-$_fs-14: 14 / $fs-base + rem;
-$_fs-19: 19 / $fs-base + rem;
-$_fs-25: 25 / $fs-base + rem;
-$_fs-33: 33 / $fs-base + rem;
-$_fs-44: 44 / $fs-base + rem;
-
-// Typography applications
-$fs-pill: $_fs-9;
-$fs-btn: $_fs-12;
-$fs-footer: $_fs-12;
-$fs-menu: $_fs-14;
-$fs-body: $_fs-14;
-$fs-lead: $_fs-19;
-$fs-title-s: $_fs-25;
-$fs-title-m: $_fs-33;
-$fs-title-l: $_fs-44;
+module.exports = {
+  _font_family: "'Open Sans', sans-serif",
+  _fs_btn: valores["_fs-12"],
+  _fs_footer: valores["_fs-12"],
+  _fs_menu: valores["_fs-14"],
+  _fs_body: valores["_fs-14"],
+  _fs_title_s: valores["_fs-25"],
+  _fs_title_m: valores["_fs-33"],
+  _fs_title_l: valores["_fs-34"],
+};
