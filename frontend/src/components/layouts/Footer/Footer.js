@@ -1,20 +1,9 @@
-import React, {useEffect} from "react";
+import React from "react";
 
 //import { Link } from "react-router-dom";
 
 const Footer = () => {
 
-  const setFooter = () => {
-    const footerName = document.getElementById("g-footer__name");
-    const anyo = new Date();
-    footerName.innerHTML = `&copy; ${anyo.getFullYear()}`;
-  }
-
-  useEffect(() => {
-    setFooter();
-    
-    
-  }, []);
   return (
     <footer className="g-footer">
       <nav className="g-footer__nav">
@@ -25,7 +14,7 @@ const Footer = () => {
           <li>Normas</li>
         </ul>
       </nav>
-      <div id="g-footer__name"></div>
+      <div id="g-footer__name">{`&copy; ${new Date().getFullYear()}`}</div>
     </footer>
   );
 };

@@ -317,8 +317,101 @@ a:hover,
       align-items: center;
       gap: 1rem;
     }
+.o-container {
+    max-width: 71.25rem;
+    padding: 1.6rem 1rem;
+    margin: 0 auto;
+  }
 /* Atoms */
+.a-btn {
+  display: inline-block;
+  padding: 0.75rem 1.87rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 0.75;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s;
+
+ /* &--primary {
+    background: variables.$primary-color;
+    color: variables.$text-inverted-color;
+
+    &:hover,
+    &:focus {
+      background: variables.$primary-dark-color;
+      color: variables.$text-inverted-color;
+    }
+  }*/
+}
+.a-btn--block {
+    display: block;
+    width: 100%;
+  }
 /* Molecules */
+.m-form__container {
+  position: relative;
+  margin: 1.5rem 1rem;
+}
+.m-form__field {
+  display: block;
+  width: 100%;
+  padding: 15px 10px 0;
+  border: none;
+  
+  background-color: transparent;
+  color: rgb(159, 173, 189);
+  border-bottom: 1px solid rgb(159, 173, 189);
+  font-size: 1.5rem;
+}
+.m-form__field:focus {
+    outline: 0;
+  }
+.m-form__floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 5px;
+  left: 10px;
+  font-size: 0.8rem;
+  opacity: 0;
+  background-color: transparent;
+  padding: 0 2px;
+  transition: 0.2s ease-in-out;
+  color: rgb(159, 173, 189);
+}
+.m-form__field:valid + .m-form__floating-label {
+  opacity: 1;
+  top: -5px;
+  color: #9e9e9e;
+}
+.m-form__field:focus + .m-form__floating-label {
+  color: #03a9f4;
+}
+.m-alert {
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+.m-alert--info {
+    background-color: #7AC8FF;
+    color: #fff;
+  }
+.m-alert--success {
+    background-color: #78f087;
+    color: #fff;
+  }
+.m-alert--warning {
+    background-color: #78f087;
+    color: #000;
+  }
+.m-alert--danger {
+    background-color: #FF756D;
+    color: #fff;
+  }
 /* Organisms */
 .g-header {
   background-color: #152232;
@@ -328,7 +421,7 @@ a:hover,
   left: 0;
   width: 100%;
   z-index: 9;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

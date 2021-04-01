@@ -1,7 +1,9 @@
 import pathAuth from "../path/auth.path";
 
 import Login from "../../../components/Auth/Login"
+import Logout from "../../../components/Auth/Logout"
 import Register from "../../../components/Auth/Register"
+import Activate from "../../../components/Auth/Activate"
 
 
 export const VIEW_LOGIN = {
@@ -11,7 +13,7 @@ export const VIEW_LOGIN = {
 }
 
 export const VIEW_LOGOUT = {
-    component: "",
+    component: Logout,
     path: pathAuth.logout,
     isPrivate: false
 }
@@ -22,6 +24,12 @@ export const VIEW_REGISTER = {
     isPrivate: false
 }
 
+export const VIEW_ACTIVATE = {
+    component: Activate,
+    path: pathAuth.activate,
+    isPrivate: false
+}
 
+const rutas = [VIEW_LOGIN, VIEW_LOGOUT, VIEW_REGISTER, VIEW_ACTIVATE]
 
-export default [VIEW_LOGIN, VIEW_LOGOUT, VIEW_REGISTER];
+export default rutas;

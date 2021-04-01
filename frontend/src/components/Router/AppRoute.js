@@ -1,19 +1,20 @@
 import React from "react";
 import { Route } from "react-router-dom";
 
-//import useUser from "./../../hooks/useUser";
+import useUser from "./../../hooks/useUser";
+
 
 const AppRoute = ({ component: Component, path, isPrivate, ...props }) => {
 
-  //const { isLogged } = useUser();
+  const { isLogged } = useUser();
   
   return (
     <Route
       exact path={path}
       render={(props) =>
-        isPrivate /*&& !isLogged*/ ? (
-          <div>Por favor, inicia sesión</div>
-        ) : (
+        isPrivate && !isLogged ? 
+          window.location.href = "/login"
+         : (
           <Component {...props} />
         )
       }

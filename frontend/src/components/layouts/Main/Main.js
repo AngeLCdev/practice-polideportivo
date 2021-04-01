@@ -9,7 +9,10 @@ import AppRoute from "./../../Router/AppRoute";
 //Importamos las rutas
 import rutasGeneral from "./../../../config/routing/routes";
 
+
+
 const Main = () => {
+
   return (
     <main className="g-main">
       <Switch>
@@ -26,6 +29,7 @@ const Main = () => {
           });
         })}
       </Switch>
+      
     </main>
   );
 };
