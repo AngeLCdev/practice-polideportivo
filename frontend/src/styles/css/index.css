@@ -412,6 +412,9 @@ a:hover,
     background-color: #FF756D;
     color: #fff;
   }
+.m-slider > div{
+        height: 100vh;
+    }
 /* Organisms */
 .g-header {
   background-color: #152232;

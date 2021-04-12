@@ -1,9 +1,11 @@
 import React from "react";
 
-
+import SliderHome from './Slider/Slider';
 
 const Home = () => {
-  return <></>;
+  return <>
+    <SliderHome/>
+  </>;
 };
 
 export default Home;
