@@ -16,8 +16,6 @@ const Header = () => {
       <nav className="g-header__nav">
         <ul className="o-ui-list o-ui-list--horizontal">
           <li>Inicio</li>
-          <li>Instalaciones</li>
-          <li>Torneos</li>
           <li>Reservas</li>
         </ul>
       </nav>

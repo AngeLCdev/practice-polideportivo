@@ -10,7 +10,7 @@ const valores = {
 module.exports = {
   _bg_body: valores._bg_dark,
   _color_body: valores._color_dark,
-  _bg_header: valores._bg_dark_100,
+  _bg_header: 'rgba(0,0,0,0.5)',
   _color_header: valores._color_dark_100,
   _bg_footer: valores._bg_dark_200,
   _color_footer: valores._color_dark_100,

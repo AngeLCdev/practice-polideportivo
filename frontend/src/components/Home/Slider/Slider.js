@@ -5,10 +5,18 @@ const SliderHome = () => {
   return (
     <div className="m-slider">
       <Slider auto={5000} hasBullets={true}>
-        <div><img src="/img/kaguya.jpg" alt=""/></div>
-        <div><img src="/img/arietty.jpg" alt=""/></div>
-        <div><img src="/img/chihiro.jpg" alt=""/></div>
-        <div><img src="/img/howl.jpg" alt=""/></div>
+        <div className="m-slider__img">
+          <img src="/img/kaguya.jpg" alt="" />
+        </div>
+        <div className="m-slider__img">
+          <img src="/img/arietty.jpg" alt="" />
+        </div>
+        <div className="m-slider__img">
+          <img src="/img/chihiro.jpg" alt="" />
+        </div>
+        <div className="m-slider__img">
+          <img src="/img/howl.jpg" alt="" />
+        </div>
       </Slider>
     </div>
   );

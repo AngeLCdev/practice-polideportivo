@@ -290,9 +290,11 @@ body{
     font-size: 0.875;
     line-height: 1.8;
     height: 100%;
+    max-width: 100vw;
 }
 html{
     height: 100%;
+    max-width: 100vw;
 }
 img{
     max-width: 100%
@@ -412,23 +414,83 @@ a:hover,
     background-color: #FF756D;
     color: #fff;
   }
+/*max-width: 100vw;*/
 .m-slider > div{
-        height: 100vh;
-    }
+        width: unset}
+.m-slider__img{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+.m-instalaciones__container {
+  display: flex;
+  max-width: 80vw;
+  flex-direction: row;
+  overflow-x: auto;
+  margin: 5rem auto;
+  justify-content: center;
+}
+.m-instalaciones {
+  display: flex;
+  width: 15vw;
+  height: 30vh;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem;
+  flex-direction: column-reverse;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 1;
+  transition: .3s ease;
+}
+.m-instalaciones::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    border-radius: 20px;
+  }
+.m-instalaciones:hover {
+    /*-webkit-transform: scale(1.2);
+    /*transform: scale(1.2);
+    /*transition: .3s ease;*/
+
+      background:#a5aba1;
+  transform: scale(0.9);
+  box-shadow: inset 0 0 0 3px #555953;
+  }
+.m-instalaciones__tipo {
+  order: 1;
+  font-size: 1rem;
+}
+.m-instalaciones__title {
+  font-weight: bold;
+  font-size: 2rem;
+}
 /* Organisms */
 .g-header {
-  background-color: #152232;
+  background-color: rgba(0,0,0,0.5);
   color: #a0b1c5;
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9;
-  padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+          backdrop-filter: saturate(180%) blur(5px);
 }
 .g-header__brand {
     display: block;
@@ -470,5 +532,6 @@ a:hover,
     }
 .g-main{
     min-height: 100vh;
+    max-width: 100vw;
 }
 /* Utilities */
