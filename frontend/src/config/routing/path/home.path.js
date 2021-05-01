@@ -3,6 +3,7 @@
 const path = {};
 
 path.home = "/";
+path.reservas = "/reservar";
 
 
 export default path;

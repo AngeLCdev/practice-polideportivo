@@ -4,6 +4,10 @@ import Header from "./components/layouts/Header/Header";
 import Main from "./components/layouts/Main/Main";
 import Footer from "./components/layouts/Footer/Footer";
 
+import Modal from "./components/Modal/Modal";
+
+
+
 import { BrowserRouter as Router } from "react-router-dom";
 
 import { UserContextProvider } from "./context/UserContext";
@@ -16,6 +20,7 @@ function App() {
       <Router>
         <Header />
         <Main />
+        
         <Footer />
       </Router>
     </UserContextProvider>

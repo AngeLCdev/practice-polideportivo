@@ -13,6 +13,7 @@
 }
 
 module.exports = {
-    zMenu: indices._z9
+    zMenu: indices._z1,
+    zModal: indices._z2
 }
 

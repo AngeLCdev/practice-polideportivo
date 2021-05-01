@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9;
+  z-index: $zMenu;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -21,7 +21,10 @@
   }
 
   &__nav {
-    
+      a{
+        color: inherit;
+        text-decoration: none;
+      }
   }
 
   &__login {

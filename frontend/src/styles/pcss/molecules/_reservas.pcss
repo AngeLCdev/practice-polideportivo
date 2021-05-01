@@ -1,0 +1,36 @@
+.m-reservas {
+  padding: 1rem;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__pistas {
+    display: flex;
+    flex-direction: row;
+    max-width: 80vw;
+    overflow-x: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__pista {
+    margin: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &:hover{
+      cursor: pointer}
+    &--title {
+      text-align: center;
+      margin: 1rem 0;
+    }
+  }
+
+  &__img {
+    max-width: 10rem;
+  }
+}

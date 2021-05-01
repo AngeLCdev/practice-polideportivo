@@ -15,8 +15,8 @@ const Header = () => {
 
       <nav className="g-header__nav">
         <ul className="o-ui-list o-ui-list--horizontal">
-          <li>Inicio</li>
-          <li>Reservas</li>
+          <Link to="/">Inicio</Link>
+          <Link to="/reservar">Reservas</Link>
         </ul>
       </nav>
 
